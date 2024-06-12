@@ -1,0 +1,99 @@
+.App {
+  padding: 1rem;
+  display: flex;
+  align-items: center;
+}
+
+.Page {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  gap: 0.5vw;
+}
+.Page__heading {
+  font-size: 1.25vw;
+  font-weight: 525;
+  font-family: Inter, sans-serif;
+  margin-bottom: 0.25vw;
+}
+.Page__constraints {
+  display: flex;
+  gap: 1vw;
+  font-size: 1.125vw;
+  font-family: Inter, sans-serif;
+  border-radius: 0.5vw;
+}
+.Page__form {
+  display: flex;
+  flex-direction: column;
+  background-color: #e3e3e3;
+  padding: 0.75vw;
+  border-radius: 0.25vw;
+  gap: 0.5vw;
+}
+.Page__form-inputs {
+  display: flex;
+  gap: 0.5vw;
+}
+.Page__form-input {
+  padding: 0.5vw;
+  border: 0;
+  outline: none;
+  border-radius: 0.25vw;
+  width: 12.5vw;
+  background-color: #f7f7f7;
+}
+.Page__form-btn {
+  padding: 0.75vw;
+  border: 0;
+  font-size: 1vw;
+  border-radius: 0.25vw;
+  width: fit-content;
+  cursor: pointer;
+  background-color: #120250;
+  color: #fff;
+}
+.Page__past {
+  display: flex;
+  flex-direction: column;
+  gap: 0.5vw;
+  border: 1px solid #c0c0c0;
+  border-radius: 0.25vw;
+  padding: 0.5vw;
+}
+.Page__past-heading {
+  font-size: 1.25vw;
+  font-weight: 525;
+  font-family: Inter, sans-serif;
+}
+.Page__past-container {
+  padding: 0.25vw;
+  min-height: 1vw;
+  max-height: 50vh;
+  overflow-y: auto;
+  border: 1px solid rgba(192, 192, 192, 0.6274509804);
+  border-radius: 0.25vw;
+}
+.Page__past-msg {
+  padding: 0.25vw;
+  border-bottom: 1px solid #c0c0c0;
+  font-family: Inter, sans-serif;
+}
+.Page__past-msg:nth-last-child(1) {
+  border-bottom: 0;
+}
+.Page__past-btn {
+  padding: 0.75vw;
+  border: 0;
+  font-size: 1vw;
+  border-radius: 0.25vw;
+  width: fit-content;
+  cursor: pointer;
+  background-color: #120250;
+  color: #fff;
+}
+
+.Root {
+  display: flex;
+  flex-direction: column;
+}

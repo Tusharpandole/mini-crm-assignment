@@ -1,0 +1,60 @@
+.Modal {
+  width: 100vw;
+  height: 100vh;
+  position: absolute;
+  top: 0;
+  left: 0;
+}
+.Modal__overlay {
+  background-color: rgba(203, 201, 201, 0.6431372549);
+  backdrop-filter: blur(5px);
+  height: 100%;
+  width: 100%;
+  position: absolute;
+  top: 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.Modal__content {
+  background-color: #fff;
+  padding: 0 1.125vw 1.125vw 1.125vw;
+  border-radius: 0.25vw;
+  font-family: Inter, sans-serif;
+}
+.Modal__info-const {
+  font-weight: 550;
+}
+.Modal__info-data {
+  font-weight: 500;
+}
+.Modal__info-num {
+  color: #fb921b;
+}
+.Modal__message {
+  display: flex;
+  gap: 0.5vw;
+}
+.Modal__message-input {
+  padding: 0;
+  border: 0;
+  border-bottom: 1px solid #000;
+  font-size: 1vw;
+  outline: none;
+}
+.Modal__buttons {
+  margin-top: 1vw;
+  display: flex;
+  gap: 0.5vw;
+}
+.Modal__buttons-btn {
+  padding: 0.75vw;
+  border: 0;
+  font-size: 1vw;
+  border-radius: 0.25vw;
+  width: fit-content;
+  cursor: pointer;
+  background-color: #120250;
+  color: #fff;
+  padding: 0.5vw 0.5vw;
+}

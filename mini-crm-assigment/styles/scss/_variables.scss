@@ -1,0 +1,17 @@
+$screen-md: 1024px;
+$screen-sm: 768px;
+$screen-xs: 640px;
+$screen-xxs: 468px;
+
+$font-family: Inter, sans-serif;
+
+@mixin button-style {
+    padding: 0.75vw;
+    border: 0;
+    font-size: 1vw;
+    border-radius: 0.25vw;
+    width: fit-content;
+    cursor: pointer;
+    background-color: #120250;
+    color: #fff;
+}

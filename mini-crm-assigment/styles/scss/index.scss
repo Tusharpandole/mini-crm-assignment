@@ -1,0 +1,99 @@
+@import '_variables.scss';
+
+.App {
+    padding: 1rem;
+    display: flex;
+    align-items: center;
+}
+
+.Page {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    gap: 0.5vw;
+
+    &__heading {
+        font-size: 1.25vw;
+        font-weight: 525;
+        font-family: $font-family;
+        margin-bottom: 0.25vw;
+    }
+
+    &__constraints {
+        display: flex;
+        gap: 1vw;
+        font-size: 1.125vw;
+        font-family: $font-family;
+        border-radius: 0.5vw;
+    }
+
+    &__form {
+        display: flex;
+        flex-direction: column;
+        background-color: #e3e3e3;
+        padding: 0.75vw;
+        border-radius: 0.25vw;
+        gap: 0.5vw;
+
+        &-inputs {
+            display: flex;
+            gap: 0.5vw;
+        }
+
+        &-input {
+            padding: 0.5vw;
+            border: 0;
+            outline: none;
+            border-radius: 0.25vw;
+            width: 12.5vw;
+            background-color: #f7f7f7;
+        }
+
+        &-btn {
+            @include button-style
+        }
+    }    
+
+    &__past {
+        display: flex;
+        flex-direction: column;
+        gap: 0.5vw;
+        border: 1px solid #c0c0c0;
+        border-radius: 0.25vw;
+        padding: 0.5vw;
+
+        &-heading {
+            font-size: 1.25vw;
+            font-weight: 525;
+            font-family: $font-family;
+        }
+
+        &-container {
+            padding: 0.25vw;
+            min-height: 1vw;
+            max-height: 50vh;
+            overflow-y: auto;
+            border: 1px solid #c0c0c0a0;
+            border-radius: 0.25vw;
+        }
+
+        &-msg {
+            padding: 0.25vw;
+            border-bottom: 1px solid #c0c0c0;
+            font-family: $font-family;
+
+            &:nth-last-child(1) {
+                border-bottom: 0;
+            }
+        }
+
+        &-btn {
+            @include button-style
+        }
+    }
+}
+
+.Root {
+    display: flex;
+    flex-direction: column;
+}
